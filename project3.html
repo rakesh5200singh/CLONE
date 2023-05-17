@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" media="screen and (max-width:1000px)" href="phone.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0px;
+        }
+
+        #logo {
+            margin: 5px 25px;
+        }
+
+        #logo img {
+            height: 59px;
+            margin: 3px 6px;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: yellow;
+        }
+
+        #home {
+            display: flex;
+            color: black;
+            height: 648px;
+            flex-direction: column;
+            padding: 3px 68px;
+            justify-content: center;
+            align-items: center;
+        }
+        #home::before {
+            content: "";
+            position: absolute;
+            height: 725px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            background: url(food.jpg);
+            background-size: cover;
+            z-index: -1;
+            opacity: 0.89;
+        }
+
+        #home p {
+            color: white;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #service {
+            margin: 34px;
+            display: flex;
+        }
+
+        #service .box {
+            border: 2px solid brown;
+            padding: 34px;
+            margin: 3px 6px;
+            border-radius: 28px;
+            background: #f2f2f2;
+        }
+
+        #service .box img {
+            height: 160px;
+            margin: auto;
+            display: block;
+        }
+
+        #service .box p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #client-section {
+            height: 344px;
+        }
+
+        #client-section::before {
+            content: "";
+            position: absolute;
+            background: url(pizza.webp);
+            width: 100%;
+            height: 50%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        #clients {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #clients-item {
+            padding: 34px;
+        }
+
+        /*contact section*/
+        #contact{
+            position: relative;
+        }
+        #contact::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            background: url(hero-bg1.png)no-repeat center center/cover;
+        }
+        #contact-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px ;
+        }
+        #contact-box input,
+        #contact-box textarea{
+            width: 100%;
+            padding: 0.5rem;
+        }
+        footer{
+            background: orange;
+            color: white;
+            padding: 9px 20px;
+        }
+        .h-primary {
+            font-size: 2.8rem;
+            padding: 12px;
+        }
+
+        .h-secondary {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2.3rem;
+            padding: 12px;
+        }
+
+        .btn {
+            padding: 6px 20px;
+            border: 2px solid white;
+            background-color: brown;
+            color: white;
+            margin: 17px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo1.png" alt="my online meal">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">kitchen</a></li>
+            <li><a href="#">Park</a></li>
+            <li><a href="#">garden</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Welcome to my online meal</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Dolor beatae, aut magni molestiae repellendus
+            error?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button class="btn">Order now</button>
+    </section>
+    <section class="service-container">
+        <h1 class="h-primary center">Our service</h1>
+        <div id="service">
+            <div class="box">
+                <img src="pizza.webp" alt="">
+                <h2 class="h-secondary center">For dining</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad esse veniam qui,
+                    voluptatem praesentium
+                    provident dolore atque. Aut cumque dolorem quibusdam eius fuga iusto, delectus illo explicabo nam
+                    amet quas voluptates maiores quis! Nostrum.</p>
+            </div>
+            <div class="box">
+                <img src="pizza.webp" alt="">
+                <h2 class="h-secondary center">Bulk order</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad esse veniam qui,
+                    voluptatem praesentium
+                    provident dolore atque. Aut cumque dolorem quibusdam eius fuga iusto, delectus illo explicabo nam
+                    amet quas voluptates maiores quis! Nostrum.</p>
+            </div>
+            <div class="box">
+                <img src="pizza.webp" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad esse veniam qui,
+                    voluptatem praesentium
+                    provident dolore atque. Aut cumque dolorem quibusdam eius fuga iusto, delectus illo explicabo nam
+                    amet quas voluptates maiores quis! Nostrum.</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="logo1.png" alt="Our clients">
+            </div>
+            <div class="client-item">
+                <img src="logo1.png" alt="Our clients">
+            </div>
+            <div class="client-item">
+                <img src="logo1.png" alt="Our clients">
+            </div>
+            <div class="client-item">
+                <img src="logo1.png" alt="Our clients">
+            </div>
+            <div class="client-item">
+                <img src="logo1.png" alt="Our clients">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary centre">Contact us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="Name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="Name">Email:</label>
+                    <input type="email" name="name" id="name" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="Name">Phone number:</label>
+                    <input type="phone" name="name" id="name" placeholder="Enter your Phone">
+                </div>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            copyright &copy;www.onlinemeal.com.All right reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
